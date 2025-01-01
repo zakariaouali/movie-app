@@ -100,3 +100,40 @@ iframe{
 .movie-trailer h1{
     text-align: center;
 }
+@media(max-width:700px){
+    .info{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .details{
+        width: 100%;
+        align-items: center;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    .gn-div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0%;
+        justify-content: center;
+        align-items: center;
+      }
+      .genre{
+        margin: 10px;
+      }
+      .cover{
+        overflow: auto;
+      }
+      .info .movie-rating{
+        width: 50%;
+      }
+      h1{
+        text-align: center;
+        width: 100%;
+      }
+}

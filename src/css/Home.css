@@ -112,11 +112,7 @@
     margin: 10px;
     font-size: 45px;
   }
-  @media(max-width:700px){
-    h1{
-      font-size: 40px;
-    }
-  }
+
 
 .banner{
   display: flex;
@@ -132,4 +128,13 @@
   text-align: center;
   color: white;
   width: 40%;
+}
+
+@media(max-width:700px){
+  h1{
+    font-size: 40px;
+  }
+  .site-description{
+    width: 100%;
+  }
 }
