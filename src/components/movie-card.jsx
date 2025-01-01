@@ -1,6 +1,6 @@
 import  "../css/MovieCard.css" ;
 import { useMovieContext } from "../contexts/MovieContext";
-import { useContext } from "react";
+import { Link } from "react-router-dom";
 export default function MovieCard({movie}){
     const {isFavorite,addToFavorites,removeFromFavorites}=useMovieContext() 
     const favorite = isFavorite(movie.id)
@@ -11,7 +11,7 @@ export default function MovieCard({movie}){
 
 
     }
-    return <div className="movie-card">
+    return <Link className="movie-card" to={`/movie-app/movie-info/${movie.id}`}>
         <div className="movie-poster">
             <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title}/>
             <div className="movie-overlay">
@@ -25,5 +25,5 @@ export default function MovieCard({movie}){
                 <p className="rating">⭐{movie.vote_average ? movie.vote_average.toFixed(1) : "N/A"}</p>
             </div>
         </div>
-    </div>
+    </Link>
 }

@@ -47,5 +47,5 @@
   }
   
   .movies-grid > * {
-    animation: fadeIn 0.3s ease-out forwards;
+    animation: fadeIn 0.6s ease-in forwards;
   }

@@ -4,8 +4,10 @@
     overflow: hidden;
     background-color: #1a1a1a;
     transition: transform 0.2s;
-    min-height: 350px;  /* Ensures the card has a minimum height */
-    max-width: 300px;  
+    min-height: 300px;  /* Ensures the card has a minimum height */
+    max-width: 260px;  
+    min-width: 260px;  
+    
     display: flex;
     flex-direction: column;
   }
@@ -132,7 +134,7 @@
   }
   .movie-rating{
     background-color: yellow;
-    width: 20%;
+    width: 25%;
     border-radius: 20px;
     text-align: center;
   }

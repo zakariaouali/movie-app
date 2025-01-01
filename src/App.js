@@ -4,6 +4,7 @@ import Favorites from './pages/favorites';
 import Home from './pages/main';
 import {Routes,Route} from "react-router-dom";
 import { MovieProvider } from './contexts/MovieContext';
+import MovieInfo from './components/movie-info';
 function App() {
   return (
     <MovieProvider>
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/movie-app' element={<Home/>}/>
           <Route path='/favorites' element={<Favorites/>}/>
+          <Route path='/movie-app/movie-info/:id' element={<MovieInfo/>}/>
         </Routes>
       </main>
     </MovieProvider>
